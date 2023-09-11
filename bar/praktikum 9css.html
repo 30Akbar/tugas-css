@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .animation-box {
+                width: 100px;
+                height: 100px;
+                background-color: hotpink;
+                position: relative;
+                animation-name: slide;
+                animation-duration: 2s;
+                animation-timing-function: esse-in-out;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes slide {
+                0% { left:0;}
+                50%{ left:200px;top:100px;background-color: blueviolet;}
+                100%{ left:0;}
+            }
+        </style>
+    </head>
+    <body>
+    <div class="animation-box"></div>
+    </body>
+</html>
